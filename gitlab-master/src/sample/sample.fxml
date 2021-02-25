@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <JFXComboBox fx:id="comboBranch" layoutX="80.0" layoutY="170.0" prefHeight="29.0" prefWidth="236.0" promptText="请选择分支" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="48.0" layoutX="178.0" layoutY="49.0" stroke="BLACK" strokeType="INSIDE" width="438.0" />
+   <Text layoutX="225.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="集中代收付项目组GITLAB代码清单生成小工具" wrappingWidth="350.0" style="-fx-font-size: 17px;"/>
+   <DatePicker fx:id="startDate" layoutX="80.0" layoutY="271.0" prefHeight="29.0" prefWidth="236.0" promptText="开始日期" />
+   <DatePicker fx:id="endDate" layoutX="80.0" layoutY="315.0" prefHeight="29.0" prefWidth="236.0" promptText="结束日期" />
+   <JFXComboBox fx:id="comboMan" layoutX="80.0" layoutY="217.0" prefHeight="29.0" prefWidth="236.0" promptText="请选择人员" />
+   <TextField fx:id="massage" layoutX="80.0" layoutY="365.0" prefHeight="26.0" prefWidth="236.0" promptText="提交信息(非必输)" />
+   <TextField fx:id="path" layoutX="80.0" layoutY="415.0" prefHeight="26.0" prefWidth="236.0" promptText="文件路径(非必输)" />
+   <JFXTextArea fx:id="result" layoutX="376.0" layoutY="169.0" prefHeight="281.0" prefWidth="414.0" promptText="还未生成！" text="还未生成！"/>
+   <JFXButton layoutX="338.0" layoutY="489.0" prefHeight="48.0" prefWidth="119.0" style="-fx-font-size: 20px; -fx-background-color: #DDDDDD;" text="生成" textAlignment="CENTER" onAction="#getCodeList" />
+</AnchorPane>
